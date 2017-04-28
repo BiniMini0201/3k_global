@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ page trimDirectiveWhitespaces="true"%>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
@@ -61,9 +65,9 @@
 <div class="top">
     <div class="container">         
         <ul class="loginbar pull-right">
-            <li><a href="page_faq.html">문의하기</a></li>  
+            <li><a href="page_faq.html">ë¬¸ìíê¸°</a></li>  
             <li class="devider"></li>   
-            <li><a href="page_faq.html">찾아오시는길</a></li>  
+            <li><a href="page_faq.html">ì°¾ìì¤ìëê¸¸</a></li>  
         </ul>
     </div>      
 </div><!--/top-->
@@ -83,7 +87,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html"><h1>3K Global</h1>
-                    <!--<img id="logo-header" src="N:/내 문서/(주)3K글로벌 - NEW/온라인쇼핑몰관련/홈페이지/assets/img/hplogo.jpg" alt="Logo">
+                    <!--<img id="logo-header" src="N:/ë´ ë¬¸ì/(ì£¼)3Kê¸ë¡ë² - NEW/ì¨ë¼ì¸ì¼íëª°ê´ë ¨/ííì´ì§/assets/img/hplogo.jpg" alt="Logo">
                     -->
                 </a>
             </div>
@@ -99,19 +103,19 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-delay="0" data-close-others="false">
-                            회사연혁
+                            íì¬ì°í
                             <i class="icon-angle-down"></i>
                         </a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-delay="0" data-close-others="false">
-                            회사소개
+                            íì¬ìê°
                             <i class="icon-angle-down"></i>
                         </a>
                     </li>
                      <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-delay="0" data-close-others="false">
-                            공지사항
+                            ê³µì§ì¬í­
                             <i class="icon-angle-down"></i>
                         </a>
                     </li>        
@@ -140,11 +144,11 @@
         <div class="col-md-9">
             <!--Blog Post-->        
             <div class="blog margin-bottom-40">
-               <h1 class="notice margin-top-20">제목:제목입니다</h1>
+               <h1 class="notice margin-top-20">ì ëª©:ì ëª©ìëë¤</h1>
             </div>
          <hr width="100%">
             <div class="noticecon">
-               <h4>내용입니다</h4>
+               <h4>ë´ì©ìëë¤</h4>
             </div>
         </div>
     </div>
@@ -335,8 +339,8 @@
             <div class="col-md-4 md-margin-bottom-40">
                 <!-- About -->
                 <div class="headline"><h2>About</h2></div>  
-                <p class="margin-bottom-25 md-margin-bottom-40">안녕하십니까. 
-                베트남산 냉동 절단 쭈꾸미 전문 수입업체 (주)3K글로벌 입니다. </p>    
+                <p class="margin-bottom-25 md-margin-bottom-40">ìëíì­ëê¹. 
+                ë² í¸ë¨ì° ëë ì ë¨ ì­ê¾¸ë¯¸ ì ë¬¸ ìììì²´ (ì£¼)3Kê¸ë¡ë² ìëë¤. </p>    
 
                 <!-- Monthly Newsletter -->
                 <!--
@@ -369,7 +373,7 @@
                 <div class="headline"><h2>@@@</h2></div> 
                 <address class="md-margin-bottom-40">
                     Kim Myung ho <br />
-                    Korea, 대한민국 <br />
+                    Korea, ëíë¯¼êµ­ <br />
                     Phone: 84-3852-3714 <br />
                     Fax: 84-8-5417-1259 <br />
                     Email: <a href="mailto:steer98@naver.com" class="">steer98@naver.com</a>

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ page trimDirectiveWhitespaces="true"%>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
@@ -69,7 +73,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html"><h1>3K Global</h1>
-                    <!--<img id="logo-header" src="N:/내 문서/(주)3K글로벌 - NEW/온라인쇼핑몰관련/홈페이지/assets/img/hplogo.jpg" alt="Logo">
+                    <!--<img id="logo-header" src="N:/ë´ ë¬¸ì/(ì£¼)3Kê¸ë¡ë² - NEW/ì¨ë¼ì¸ì¼íëª°ê´ë ¨/ííì´ì§/assets/img/hplogo.jpg" alt="Logo">
                     -->
                 </a>
             </div>
@@ -79,7 +83,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
-                            공지사항
+                            ê³µì§ì¬í­
                             <i class="icon-angle-down"></i>
                         </a>
                     </li>
@@ -109,12 +113,12 @@
             <!--Blog Post-->
     <div class="panel panel-blue panelma width-100%">
         <div class="panel-heading margin-bottom-10">
-            <h3 class="panel-title"><i class="icon-tasks"></i>공지사항 수정</h3>
+            <h3 class="panel-title"><i class="icon-tasks"></i>ê³µì§ì¬í­ ìì </h3>
         </div>
         <div class="container">
             <div class="row portfolio-item margin-bottom-10">
                 <div class="col-md-12">
-                    <input type="text" class="form-control" placeholder="요리명" value="제목">
+                    <input type="text" class="form-control" placeholder="ìë¦¬ëª" value="ì ëª©">
                 </div>                             
             </div><!--/col-md-4-->
         </div>
@@ -122,7 +126,7 @@
         <div class="container">
             <div class="row portfolio-item margin-bottom-10">
                 <div class="col-md-12">
-                    <textarea class="form-control" rows="5" placeholder="내용"></textarea>
+                    <textarea class="form-control" rows="5" placeholder="ë´ì©"></textarea>
                 </div>                             
             </div><!--/col-md-4-->
         </div>
@@ -130,7 +134,7 @@
         <div class="container">
             <div class="row portfolio-item margin-bottom-10">
                 <div class="col-md-12">
-                    <button class="btn btn-info">수정</button>
+                    <button class="btn btn-info">ìì </button>
                  </div>                     
             </div><!--/col-md-4-->
         </div>

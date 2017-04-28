@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ page trimDirectiveWhitespaces="true"%>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
@@ -63,12 +67,12 @@
         <hr>
         <label class="checkbox">
             <input type="checkbox"> 
-            <p>아이디 저장</p>
+            <p>ìì´ë ì ì¥</p>
         </label>
                                 
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <button type="submit" class="btn-u btn-block">로그인</button>
+                <button type="submit" class="btn-u btn-block">ë¡ê·¸ì¸</button>
             </div>
         </div>
     </div>
