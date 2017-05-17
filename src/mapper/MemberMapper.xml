@@ -14,5 +14,14 @@
 		<result property="join_date" column="join_date" />
 		<result property="join_edit" column="join_edit" />
 	</resultMap>
+	<!-- 일련번호에 의한 회원 정보 조회 -->
+ 	<select id="selectMember" parameterType="model.Member"
+ 		resultMap="member">
+ 		SELECT
+ 		id,user_id,user_pw,reg_date,edit_date
+ 		FROM member
+ 		WHERE id=#{id}
+ 	</select>
+	
 </mapper>
 

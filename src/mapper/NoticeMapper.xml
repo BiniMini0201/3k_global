@@ -16,5 +16,85 @@
 		<result property="edit_date" column="edit_date" />
 		<result property="member_id" column="member_id" />
 	</resultMap>
+	<!-- 게시물 하나에 대한 조회 -->
+	<select id="selectNotice" parameterType="model.Notice" 
+	resultMap="notice">
+		SELECT id,content,hit,title,member_id,
+		DATE_FORMAT(reg_date, '%Y-%m-%d %H-%i:%s') as reg_date,
+		DATE_FORMAT(edit_date, '%Y-%m-%d %H-%i:%s') as edit_date
+		FROM notice
+	</select>
+	
+	<!-- 조회수 -->
+	<insert id="updeteNoticeHit" 
+	 parameterType="model.Notice">
+	 	UPDATE notice SET hit= hit+1 WHERE id=#{id}
+	 </insert>
+	 
+	 <!-- 게시물 목록을 조회한다 -->
+	 <select id="selelctNoticeList"
+	 parameterType="model.Notice"
+	 resultMap="notice">
+	 	SELECT id,title,hit,
+			   DATE_FORMAT(reg_date, '%Y-%m-%d') as reg_date
+	 	FROM notice
+	 	
+	 	ORDER BY id DESC
+	 	
+	 	LIMIT #{limitStart}, #{listCount};
+	 </select>
+	 
+	 <!-- 전체 게시물 수를 조회한다. -->
+	 <select id="selectNoticeCount"
+	 parameterType="model.Notice"
+	 resultType="int">
+	 SELECT COUNT(id) FROM notice
+	 </select>
+	 
+	 
+	 
+	<!-- 관리자 -->
+	<!-- 게시몰 업데이트 -->
+	<insert id="insertNotice" parameterType="model.BbsDocument"
+	useGeneratedKeys="true" keyProperty="id">
+	INSERT INTO notice (
+		title,content,hit,reg_date,edit_date,
+		member_id
+		) VALUES(
+		#{title}#{content},0,now(),now(),#{member_id}
+		<choose>
+			<when test="memberId==0">
+				null,password(#{writerPw})
+			</when>
+			<otherwise>
+				#{memberId}, #{writerPw}
+			</otherwise>
+		</choose>
+		)
+	</insert>
+	
+	
+	<!-- 게시글 삭제하기 -->
+	 <delete id="deleteNotice" 
+	 parameterType="model.notice">
+	 DELETE FROM notice WHERE id=#{id}
+	 </delete>
+	 
+	 <!-- 게시글 정보 수정하기 -->
+	<update id="updateNotice" parameterType="model.BbsDocument">
+	UPDATE notice SET
+	title=#{title}
+	content=#{content},
+	edit_date=now()
+	WHERE id=#{id}
+	</update>
+	
+	 <!-- 특정 회원과의 게시물 참조 해제하기 -->
+	 <update id="updateNoticeMemberOut" parameterType="model.BbsDocument">
+	 	UPDATE bbs_document
+	 	SET    member_id=NULL, edit_date=now()
+	 	WHERE 	member_id=#{memberId}
+	 </update>
+	
 </mapper>
 
